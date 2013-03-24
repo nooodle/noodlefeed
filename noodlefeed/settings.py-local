@@ -1,0 +1,19 @@
+# Application settings.
+#
+# To override the values, create a local_settings.py and enter the
+# new values there.
+
+DATABASE_URL = 'sqlite:///noodlefeed.db'
+DEBUG = True
+DEBUG_SQL = True
+DEFAULT_TTL = 10  # Default time-to-live, in seconds.
+PREFERRED_URL_SCHEME = 'http'
+# To generate a secret: import os; os.urandom(24)
+SECRET_KEY = 'SECRET_KEY'
+SERVER_NAME = 'localhost:5000'
+
+
+try:
+    from settings_local import *
+except ImportError:
+    pass

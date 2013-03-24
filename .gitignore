@@ -1,0 +1,11 @@
+*.py[co]
+settings.py
+settings_local.py
+tmp
+.DS_Store
+noodlefeed.db
+node_modules
+noodlefeed/static/js/local_settings.js
+noodlefeed/static/js/lib/nunjucks.js
+noodlefeed/static/js/templates.js
+noodlefeed/static/js/build
